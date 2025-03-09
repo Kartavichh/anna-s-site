@@ -5,13 +5,13 @@
     font-style: normal;
 }
 @font-face {
-	font-family: 'JarBinks-Regular';
-	src: url('../fonts/jarbinks-regular.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/jarbinks-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/jarbinks-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/jarbinks-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/jarbinks-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/jarbinks-regular.svg#jarbinks-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: 'JarBinks-Regular';
+  src: url('../fonts/jarbinks-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/jarbinks-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/jarbinks-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/jarbinks-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/jarbinks-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/jarbinks-regular.svg#jarbinks-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 /* Общие стили */
 body {
@@ -27,6 +27,10 @@ header {
     background: #ED968D;
     padding: 20px 50px;
     max-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Шапка займёт всю ширину окна браузера */
+    z-index: 1000; /* Высокое значение, чтобы шапка была всегда на первом плане */
 }
 
 .logo {
@@ -41,6 +45,7 @@ nav ul {
     display: flex;
     font-family: 'JarBinks-Regular', sans-serif;
     gap: 100px;
+    margin-right: 150px;
 }
 
 nav ul li {
