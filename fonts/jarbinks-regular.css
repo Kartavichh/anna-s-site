@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'JarBinks-Regular';
+	src: url('../fonts/jarbinks-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/jarbinks-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/jarbinks-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/jarbinks-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/jarbinks-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/jarbinks-regular.svg#jarbinks-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}

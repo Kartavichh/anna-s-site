@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Riviera';
+    src: url('fonts/Riviera.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'JarBinks-Regular';
+	src: url('../fonts/jarbinks-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/jarbinks-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/jarbinks-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/jarbinks-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/jarbinks-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/jarbinks-regular.svg#jarbinks-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ED968D;
+    padding: 20px 50px;
+    max-height: 50px;
+}
+
+.logo {
+    font-size: 70px;
+    font-family: 'JarBinks-Regular', sans-serif;
+    color: #000;
+    margin-bottom: 19px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: 'JarBinks-Regular', sans-serif;
+    gap: 100px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    background: #D77C6F;
+    border-radius: 60px;
+    min-width: 100px;
+    height: 80px; /* Добавляем высоту */
+}
+
+nav ul li a {
+    font-size: 40px; /* Немного уменьшаем шрифт для центрирования */
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Чтобы текст заполнял всю кнопку */
+    height: 100%; /* Чтобы текст был внутри кнопки */
+}
+
+/* Главный экран */
+.main-slide {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 220px;
+    font-family: 'Riviera', sans-serif;
+    color: #464646;
+}
+
+h1 .red {
+    color: #CC5C51;
+    font-family: 'Riviera', sans-serif;
+}
+
+/* About */
+.about {
+    padding: 100px;
+    background: #EAEAEA;
+    text-align: center;
+}
+
+/* Work */
+.work {
+    padding: 100px;
+    background: #FFD0D9;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    padding: 100px;
+    background: #FFCAD4;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #414141;
+    border-radius: 10px;
+}
+
+.contact button {
+    padding: 15px;
+    background: #CC5C51;
+    color: #FFF;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact button:hover {
+    background: #A43428;
+}
