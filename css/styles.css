@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Riviera';
-    src: url('fonts/Riviera.otf') format('otf');
-    font-weight: normal;
+    font-family: 'Riviera Regular';
     font-style: normal;
-}
+    font-weight: normal;
+    src: local('Riviera Regular'), url('../fonts/riviera.woff') format('woff');
+    }
 @font-face {
   font-family: 'JarBinks-Regular';
   src: url('../fonts/jarbinks-regular.eot'); /* IE 9 Compatibility Mode */
@@ -16,7 +16,7 @@
 /* Общие стили */
 body {
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Century Gothic', serif;
     background-color: #FFFFFF;
 }
 
@@ -82,13 +82,13 @@ nav ul li a {
 
 h1 {
     font-size: 220px;
-    font-family: 'Riviera', sans-serif;
+    font-family: 'Riviera Regular', sans-serif;
     color: #464646;
 }
 
 h1 .red {
     color: #CC5C51;
-    font-family: 'Riviera', sans-serif;
+    font-family: 'Riviera Regular', sans-serif;
 }
 
 /* About */
