@@ -72,25 +72,43 @@ nav ul li a {
 
 /* Главный экран */
 .main-slide {
-    height: 100vh;
-    text-align: center;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 10%, #f3b59c 100%);
 }
 
 h1 {
     font-size: 220px;
     font-family: 'Riviera Regular', sans-serif;
     color: #464646;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -400px; /* Поднимем текст вверх */
+    margin-left: -100px;
+    line-height: 0.8;
 }
 
 h1 .red {
     color: #CC5C51;
-    font-family: 'Riviera Regular', sans-serif;
 }
-
+h1 .white {
+    margin-left: 400px;
+}
+.main-slide p {
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 500px;
+    text-shadow: 1px 1px 30px black;
+}
 /* About */
 .about {
     padding: 100px;
@@ -139,4 +157,19 @@ h1 .red {
 
 .contact button:hover {
     background: #A43428;
+}
+.backgroundPhoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh; /* Регулируй высоту в зависимости от эффекта */
+    overflow: hidden;
+    z-index: -1;
+}
+
+.backgroundPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Чтобы изображение заполняло контейнер */
 }
