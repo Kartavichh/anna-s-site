@@ -39,6 +39,10 @@ header {
     color: #000;
     margin-bottom: 19px;
 }
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
 
 nav ul {
     list-style: none;
@@ -111,9 +115,39 @@ h1 .white {
 }
 /* About */
 .about {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Оставляем текст слева */
     padding: 100px;
     background: #EAEAEA;
-    text-align: center;
+    text-align: left;
+    position: relative; /* Добавляем позиционирование для работы с absolute */
+    background: linear-gradient(to top, #fdccb9 20%, #f3b59c 80%);
+    min-height: 80vh;
+}
+
+.about h2 {
+    font-family: 'Riviera Regular', sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 500px;
+    font-size: 22px;
+}
+
+.about img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Выравниваем по центру вертикально */
+    max-width: 700px;
+    height: auto;
+}
+.question{
+    margin-top: 40vh;
+    margin-right: 10vh;
 }
 
 /* Work */
