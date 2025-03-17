@@ -26,7 +26,7 @@ header {
     align-items: center;
     background: #ED968D;
     padding: 20px 50px;
-    max-height: 50px;
+    max-height: 7vh;
     position: fixed;
     top: 0;
     width: 100%; /* Шапка займёт всю ширину окна браузера */
@@ -58,8 +58,8 @@ nav ul li {
     justify-content: center; /* Центрирование по горизонтали */
     background: #D77C6F;
     border-radius: 60px;
-    min-width: 100px;
-    height: 80px; /* Добавляем высоту */
+    min-width: 12vh;
+    height: 10vh; /* Добавляем высоту */
 }
 
 nav ul li a {
@@ -133,7 +133,7 @@ h1 .white {
 }
 
 .about p {
-    max-width: 500px;
+    max-width: 70vh;
     font-size: 22px;
 }
 
@@ -142,12 +142,13 @@ h1 .white {
     right: 0;
     top: 50%;
     transform: translateY(-50%); /* Выравниваем по центру вертикально */
-    max-width: 700px;
+    max-width: 80vh;
     height: auto;
 }
 .question{
-    margin-top: 40vh;
-    margin-right: 10vh;
+    margin-top: 37vh;
+    margin-right: 20vh;
+    max-height: 15vh;
 }
 
 /* Work */
