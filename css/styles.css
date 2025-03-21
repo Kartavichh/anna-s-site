@@ -233,8 +233,13 @@ h1 .white {
 /* Contact Grid */
 .contact {
     padding: 100px;
-    background: #FFCAD4;
+    background: rgb(255, 202, 212);
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: 68vh;
+    background: linear-gradient(to top, #fdccb9, #F3B59C);
 }
 
 .contact-grid {
@@ -243,20 +248,40 @@ h1 .white {
     gap: 20px;
     max-width: 500px;
     margin: 0 auto;
+    grid-column: 2;
+    grid-row: 2;
 }
-
+.contactText{
+    grid-row: 2;
+    font-family: 'Riviera Regular', sans-serif;
+    font-size: 48px;
+}
+.contactText h3{
+    color: #a43428a1;
+}
 .contact-item {
     width: 100%;
 }
-
+#nameItem{
+    grid-row: 1;
+}
+#emailItem{
+    grid-row: 2;
+}
+#textareaItem{
+    grid-row: 3;
+}
 .contact-item input, .contact-item textarea {
     width: 100%;
     padding: 15px;
     border: 2px solid #414141;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 38px;
+    font-size: 43px;
+    font-family: 'JarBinks-Regular', sans-serif;
 }
-
+::placeholder{
+    color: #000000;
+}
 .contact-textarea {
     grid-column: span 2;
 }
@@ -264,23 +289,35 @@ h1 .white {
 .contact-button {
     grid-column: span 2;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .contact button {
     padding: 15px;
     background: #CC5C51;
     color: #FFF;
-    font-size: 20px;
+    font-size: 46px;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 31px;
+    font-weight: lighter;
+    font-family: 'JarBinks-Regular', sans-serif;
 }
 
 .contact button:hover {
     background: #A43428;
 }
-
+.question3 {
+    grid-column: 1;
+    grid-row: 3; 
+    margin-left: 10%;
+}
+.socialFoot{
+    grid-column: 1;
+    grid-row: 3; 
+    margin-top: 6%;
+    margin-left: 35%;
+}
 .backgroundPhoto {
     position: absolute;
     top: 0;
